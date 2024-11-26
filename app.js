@@ -178,6 +178,7 @@ loginBtn.addEventListener("click", function (e) {
   );
   if (currentAccount.pin === Number(inputPin.value)) {
     appContainer.style.opacity = 1;
+
     labelWelcome.textContent = `Welcome Back, ${
       currentAccount.owner.split(" ")[0]
     }`;
@@ -185,6 +186,7 @@ loginBtn.addEventListener("click", function (e) {
     updateUI(currentAccount);
 
     inputUser.value = inputPin.value = "";
+    inputPin.blur();
   } else {
     alert("Wrong Details");
   }
