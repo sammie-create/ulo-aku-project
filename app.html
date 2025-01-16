@@ -10,12 +10,15 @@
       src="https://kit.fontawesome.com/aa31630032.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
     <nav class="nav">
       <p class="welcome-label">Login to get started</p>
-      <img src="Uloaku-golden.png" alt="logo-gold" class="logo" />
-      <div class="login-auth">
+      <a href="index.html"
+        ><img src="ULO-AKU.png" alt="Uloaku logo" class="logo"
+      /></a>
+      <form class="login-auth">
         <input
           type="text"
           name="user"
@@ -28,10 +31,11 @@
           name="pword"
           placeholder="PIN"
           id="pin"
+          maxlength="4"
           class="input"
         />
         <button class="btn login-btn">&RightArrow;</button>
-      </div>
+      </form>
     </nav>
 
     <main class="app">
@@ -146,11 +150,9 @@
         <button class="btn-sort">&downarrow; SORT</button>
       </section>
 
-      <section class="timer">
-        <p>You will be logged out in <span class="logout-time">00:00</span></p>
+      <section class="logout-timer">
+        <p>You will be logged out in <span class="timer">00:00</span></p>
       </section>
     </main>
-
-    <script src="app.js"></script>
   </body>
 </html>

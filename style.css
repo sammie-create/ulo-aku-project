@@ -20,6 +20,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
+  padding-top: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -33,6 +34,7 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.521);
   z-index: -2;
+  -webkit-backdrop-filter: blur(0.06rem);
   backdrop-filter: blur(0.06rem);
 }
 
@@ -54,11 +56,12 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-right: 1rem;
 }
 .logo img {
-  width: 15rem;
-  height: 6rem;
+  width: 8rem;
+  height: 5rem;
   z-index: 10;
 }
 .nav-btn {
@@ -78,7 +81,7 @@ main {
 
 .hero-text {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: hsla(0, 0%, 100%, 0.8);
   z-index: 10;
@@ -87,8 +90,15 @@ main {
   text-align: center;
   margin-bottom: 4rem;
 }
-.hero-btn {
+.hero-link {
+  display: block;
+  text-decoration: none;
+  /* text-align: center; */
   align-self: center;
+  width: fit-content;
+}
+
+.hero-btn {
   width: 12rem;
   color: white;
   background: hsl(359, 100%, 38%);
@@ -130,8 +140,8 @@ footer p:nth-child(2) span {
     margin: auto;
   }
   .logo img {
-    width: 25rem;
-    height: 12rem;
+    width: 15rem;
+    height: 8rem;
   }
   main {
     width: 85%;
